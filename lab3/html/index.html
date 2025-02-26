@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chefify Navbar</title>
+    <link rel="stylesheet" href="/lab3/css/index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/lab3/img/logo.png" alt="Chefify Logo">
+            <span>Chefify</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search recipes...">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">What to cook</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">Ingredients</a></li>
+            <li><a href="#">Occasions</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+        <div class="profile-section">
+            <button class="recipe-box-btn">Your Recipe Box</button>
+            <img src="/lab3/img/avt.png" alt="User Avatar" class="avatar">
+        </div>
+    </nav>
+    <div class="container">
+        <!-- Bộ lọc bên trái -->
+        <aside class="filters">
+            <h3>☰ FILTERS</h3>
+            
+            <div class="filter-section">
+                <div class="filter-header">
+                    <span>Type</span>
+
+                </div>
+                <div class="filter-options">
+                    <div class="filer-left">
+                        <label><input type="checkbox"> Pan-fried</label>
+                        <label><input type="checkbox"> Stir-fried</label>
+                        <label><input type="checkbox" checked> Grilled</label>
+                        <label><input type="checkbox" checked> Roasted</label>
+                    </div>
+                    
+                    <div class="filter-right">
+                        <label><input type="checkbox"> Sauteed</label>
+                        <label><input type="checkbox"> Baked</label>
+                        <label><input type="checkbox"> Steamed</label>
+                        <label><input type="checkbox"> Stewed</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-header">
+                    <span>Time</span>
+
+                </div>
+                <div class="filter-options">
+                    <input type="range" min="10" max="60" value="40">
+                    <div class="time-labels">
+                        <span>30 minutes</span>
+                        <span>50 minutes</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <div class="filter-header">
+                    <span>Rating</span>
+
+                </div>
+                <div class="filter-options rating">
+                    <label><input type="checkbox"> ⭐⭐⭐⭐⭐</label>
+                    <label><input type="checkbox"> ⭐⭐⭐⭐☆</label>
+                    <label><input type="checkbox" checked> ⭐⭐⭐☆☆</label>
+                    <label><input type="checkbox" checked> ⭐⭐☆☆☆</label>
+                    <label><input type="checkbox" checked> ⭐☆☆☆☆</label>
+                </div>
+            </div>
+
+            <button class="apply-btn">Apply</button>
+        </aside>
+
+
+        <div class="no-results">
+            <h2>Sorry, no results were found for "<span class="query">cakescascsa</span>"</h2>
+            <img src="/lab3/img/img.png" alt="No Results">
+            <p>We have all your Independence Day sweets covered.</p>
+            <div class="suggested-tags">
+                <span class="tag">Sweet Cake</span>
+                <span class="tag">Black Cake</span>
+                <span class="tag">Pozole Verde</span>
+                <span class="tag">Healthy food</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>About Us</h3>
+                <p>Welcome to our website, a wonderful place to explore and learn how to cook like a pro.</p>
+                <div class="subscribe">
+                    <input type="email" placeholder="Enter your email">
+                    <button>Send</button>
+                </div>
+                <div class="footer-brand">
+                    <img src="/lab3/img/image.png" alt="Chefify Logo">
+                    <span>Chefify</span>
+                    
+                </div>
+                <p class="copyright">© 2023 Chefify Company | <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
+                
+            </div>
+    
+            <div class="footer-right">
+                <div class="footer-column">
+                    <h3>Learn More</h3>
+                    <ul>
+                        <li><a href="#">Our Cooks</a></li>
+                        <li><a href="#">See Our Features</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="#">Gift Subscription</a></li>
+                        <li><a href="#">Send Us Feedback</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-column">
+                    <h3>Recipes</h3>
+                    <ul>
+                        <li><a href="#">What to Cook This Week</a></li>
+                        <li><a href="#">Pasta</a></li>
+                        <li><a href="#">Dinner</a></li>
+                        <li><a href="#">Healthy</a></li>
+                        <li><a href="#">Vegetarian</a></li>
+                        <li><a href="#">Vegan</a></li>
+                        <li><a href="#">Christmas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>

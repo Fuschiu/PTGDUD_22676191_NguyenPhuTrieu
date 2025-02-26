@@ -1,0 +1,350 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff4081;
+}
+
+.logo img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.search-bar input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  width: 200px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #ff4081;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.recipe-box-btn {
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.recipe-box-btn:hover {
+  background-color: #e0356d;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+.container {
+  display: flex;
+  padding: 20px;
+}
+
+/* Bộ lọc bên trái */
+.filters {
+  width: 250px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filters h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.filter-options label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.time-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: gray;
+}
+
+.rating label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Nút Apply */
+.apply-btn {
+  width: 100%;
+  background: #ff4081;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.apply-btn:hover {
+  background: #e0356d;
+}
+
+/* Phần không tìm thấy kết quả */
+.no-results {
+  flex-grow: 1;
+  text-align: center;
+  padding: 50px;
+}
+
+.no-results h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.no-results img {
+  width: 150px;
+  margin: 20px 0;
+}
+
+.no-results p {
+  font-size: 16px;
+  color: gray;
+}
+
+/* Thẻ gợi ý */
+.suggested-tags {
+  margin-top: 15px;
+}
+
+.tag {
+  display: inline-block;
+  background: #ffebf0;
+  color: #ff4081;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 14px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.tag:nth-child(2) {
+  background: #e5e5e5;
+  color: #333;
+}
+
+.tag:nth-child(3) {
+  background: #ffe6e6;
+  color: #cc0000;
+}
+
+.tag:nth-child(4) {
+  background: #e0f7fa;
+  color: #009688;
+}
+.filer-left{
+  width: 50%;
+}
+.filter-right{
+  width: 50%;
+}
+/* Footer styles */
+footer {
+  background-color: #121212;
+  color: white;
+  padding: 50px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Left Section (About Us) */
+.footer-left {
+  width: 40%;
+  min-width: 300px;
+}
+
+.footer-left h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #bbbbbb;
+}
+
+/* Subscribe Box */
+.subscribe {
+  display: flex;
+  gap: 10px;
+}
+
+.subscribe input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.subscribe button {
+  background: #ff4081;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.subscribe button:hover {
+  background: #e0356d;
+}
+
+/* Footer Branding */
+.footer-brand {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-brand img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.footer-brand span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Footer Copyright */
+.copyright {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #bbbbbb;
+}
+
+.copyright a {
+  color: white;
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  color: #ff4081;
+}
+
+/* Right Section (Links) */
+.footer-right {
+  display: flex;
+  gap: 50px;
+}
+
+.footer-column {
+  min-width: 150px;
+}
+
+.footer-column h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #bbbbbb;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #ff4081;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      text-align: center;
+  }
+  
+  .footer-left {
+      width: 100%;
+  }
+  
+  .footer-right {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+  }
+}
